@@ -1,0 +1,364 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(4, 9, 30, 0.5), rgb(4, 9, 30, 0.5)), url(image/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-logo {
+    margin-left: 12px;
+}
+
+nav {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgba(4, 9, 30, 0.5);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 4px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list {
+    padding-top: 10px;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: rgba(226, 226, 226, 0.411);
+    left: 0;
+    bottom: -5px;
+    transition: 0.1s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.contentbx {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+.contentbx h1 {
+    font-size: 60px;
+}
+
+.contentbx a {
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 7px 40px;
+    cursor: pointer;
+}
+
+.contentbx h1,
+h3,
+a {
+    padding: 20px;
+}
+
+.contentbx a:hover {
+    background: #fff;
+    color: black;
+}
+
+.Our_services {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.Our_services .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.Our_services .container .flex-item {
+    width: 30%;
+    height: 250px;
+    font-size: 20px;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.flex-item h2 {
+    font-size: 26px;
+}
+
+.flex-item p {
+    font-size: 16px;
+}
+
+.Our_services .container .flex-item:hover {
+    background: gray;
+    color: #fff;
+}
+
+/* @media(max-width: 700px) {
+    .Our_services .container .flex-item {
+        width: 90%;
+    }
+} */
+
+.feature {
+    text-align: center;
+    padding-top: 100px;
+    background: #FAFAFA;
+    margin-top: 100px;
+    height: 175vh;
+}
+
+.feature .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 35px;
+    padding-top: 50px;
+}
+
+.feature .container .image img {
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.feature .container-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: right;
+    gap: 35px;
+    padding-right: 100px;
+}
+
+.feature .container-left .image-img img {
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 70vh;
+}
+
+.about_us {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about_us .container_first img {
+    width: 110px;
+    border: 1px solid gray;
+    border-radius: 82px;
+}
+
+.about_us .container_first .flex_item1 {
+    border: 1px solid rgb(201, 200, 200);
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    height: 217px;
+}
+
+.about_us .container_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-top: 50px;
+}
+
+.about_us .container_first .flex_item1 h4 {
+    font-size: 25px;
+}
+
+.about_us .container_first .flex_item1 h6 {
+    font-size: 15px;
+}
+
+.about_us .container_first .flex_item1:hover {
+    background: rgb(148, 147, 147);
+    color: #fff;
+}
+
+.porfolio {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.column .row img {
+    width: 350px;
+}
+
+.column .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.contact .row0 .flexitem img {
+    width: 30px;
+}
+
+.contact h2 {
+    padding-top: 100px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.contact .row0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    padding-top: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: gray;
+    margin-top: 50px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+footer p {
+    color: #fff;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    height: 5px;
+    background: #fff;
+    margin: 5px 3px;
+}
+
+@media(max-width: 992px) {
+    .nav-list ul li {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav {
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(1, 5, 17, 0.74);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 60 px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .Our_services .container .flex-item {
+        width: 100%;
+    }
+
+    .Our_services .container .flex-item p {
+        font-size: 14px;
+    }
+
+    .feature {
+        height: 318vh;
+    }
+
+    .feature .container {
+        flex-direction: column;
+    }
+
+    .feature .container-left {
+        flex-direction: column;
+        padding: 45px;
+    }
+
+    .carousel-item {
+        height: 34vh;
+    }
+
+    .container_first {
+        flex-direction: column;
+    }
+
+    .about_us .container_first .flex_item1 {
+        width: 100%;
+    }
+
+    .contact .row0 h6 {
+        font-size: 9px;
+    }
+
+    .contact .row0 {
+        gap: 18px;
+    }
+
+    footer p {
+        font-size: 10px;
+        padding: 37px;
+    }
+
+}
